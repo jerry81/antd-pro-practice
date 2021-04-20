@@ -8,7 +8,7 @@ import {
 } from '@ant-design/icons';
 import { Alert, Space, message, Tabs } from 'antd';
 import React, { useState } from 'react';
-import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
+import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form'; // part of procomponents
 import { useIntl, Link, history, FormattedMessage, SelectLang, useModel } from 'umi';
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
@@ -143,7 +143,7 @@ const Login: React.FC = () => {
             )}
             {type === 'account' && (
               <>
-                <ProFormText
+                <ProFormText // same as input
                   name="username"
                   fieldProps={{
                     size: 'large',

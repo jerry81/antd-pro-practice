@@ -132,6 +132,37 @@ const TableList: React.FC = () => {
         })}`,
     },
     {
+      title: 'sunbich',
+      dataIndex: 'custom2',
+      hideInForm: true,
+      valueEnum: {
+        0: {
+          text: (
+            <FormattedMessage id="pages.searchTable.nameStatus.default" defaultMessage="关闭" />
+          ),
+          status: 'M',
+        },
+        1: {
+          text: (
+            <FormattedMessage id="pages.searchTable.nameStatus.running" defaultMessage="运行中" />
+          ),
+          status: 'N',
+        },
+        2: {
+          text: (
+            <FormattedMessage id="pages.searchTable.nameStatus.online" defaultMessage="已上线" />
+          ),
+          status: 'O',
+        },
+        3: {
+          text: (
+            <FormattedMessage id="pages.searchTable.nameStatus.abnormal" defaultMessage="异常" />
+          ),
+          status: 'Error',
+        },
+      },
+    },
+    {
       title: <FormattedMessage id="pages.searchTable.titleStatus" defaultMessage="状态" />,
       dataIndex: 'status',
       hideInForm: true,
@@ -140,7 +171,7 @@ const TableList: React.FC = () => {
           text: (
             <FormattedMessage id="pages.searchTable.nameStatus.default" defaultMessage="关闭" />
           ),
-          status: 'Default',
+          status: 'Default', /* antd actually applies a badge specifically for these statuses */
         },
         1: {
           text: (

@@ -8,6 +8,8 @@ for example yarn create umi name_of_project
 
 ### folder structure
 
+config - config umi routes, 
+
 mock - for mocking apis 
 
 useful for mocking out ui and "offline mode" development 
@@ -23,7 +25,6 @@ src
     utils - global helper functions
     services - api definitions uses umi request 
     swagger - frontend api docs 
-
 
 test - puppeteer used for e2e tests
 
